@@ -1,0 +1,77 @@
+
+// usage : .screen-desktop ({...}) 
+@mixin screen-desktop {
+    @media only screen and (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+// usage : .screen-laptop-above ({...}) 
+@mixin screen-desktop-only {
+    @media only screen and (min-width: $screen-xxl) {
+        @content;
+    }
+}
+
+// usage : .screen-laptop ({...}) 
+@mixin screen-laptop {
+    @media only screen and (max-width: ($screen-xxl - 1px)) {
+        @content;
+    }
+}
+
+// usage : .screen-laptop ({...}) 
+@mixin screen-small-laptop {
+    @media only screen and (max-width: ($screen-xl - 1px)) {
+        @content;
+    }
+}
+
+// usage : .screen-laptop-only ({...}) 
+@mixin screen-laptop-only {
+    @media only screen and (min-width: $screen-lg) and (max-width: ($screen-xxl - 1px))  {
+        @content;
+    }
+}
+
+// usage : .screen-tablet-above ({...}) 
+@mixin screen-tablet-above {
+    @media only screen and (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+// usage : .screen-tablet ({...}) 
+@mixin screen-tablet {
+    @media only screen and (max-width: $screen-lg - 1px) {
+        @content;
+    }
+}
+
+// usage : .screen-tablet-only ({...}) 
+@mixin screen-tablet-only {
+    @media only screen and (min-width: $screen-md) and (max-width: ($screen-lg - 1px)) {
+        @content;
+    }
+}
+
+// usage : .screen-mobile-above ({...})
+@mixin screen-mobile-above {
+    @media only screen and (min-width: $screen-md) {
+        @content;
+    }
+}
+
+// usage : .screen-mobile({...}) 
+@mixin screen-mobile {
+    @media only screen and (max-width: ($screen-md - 1px)) {
+        @content;
+    }
+}
+
+// usage : .screen-mobile-portrait({...}) 
+@mixin screen-mobile-portrait {
+    @media only screen and (max-width: ($screen-sm - 1px)) {
+        @content;
+    }
+}

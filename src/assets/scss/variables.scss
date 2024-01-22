@@ -1,0 +1,74 @@
+/* Colors */
+$primary-color: #0047d1;
+$secondary-color: #e2ebf6;
+$inactive-color: #3e7af0;
+$success-color: #92da1d;
+$warning-color: #fcab33;
+$danger-color: #f34c4c;
+$info-color: #9FD6F4;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: $success-color;
+$warning: $warning-color;
+$danger: $danger-color;
+
+$bg-main-color: #f6f8fa;
+$bg-second-color: #FFFFFF;
+$border-light-color: #F5F6F5;
+$border-dark-color: #E2EBF6;
+$border-active-color: #2F80ED;
+
+$gray-color: #8e98a1;
+$light-gray-color: #f3f6f9;
+
+$text-title-color: #1C1C1C;
+$text-title2-color: #3A485A;
+$text-desc-color: $gray-color;
+$text-meta-color: #B1BAC9;
+
+$white-color: #FFFFFF;
+
+$calendar-border: #ECEEF3;
+
+$secondary-hover-color: rgba($primary-color, .31);
+
+$heading-1: 30px;
+$heading-2: 20px;
+$heading-3: 18px;
+$heading-4: 16px;
+$heading-5: 15px;
+
+$input-height: 50px;
+
+
+$sidenav-width: 200px;
+$sidenav-height: 60px;
+$mini-sidenav-width: 96px;
+
+$spacer: 1.25rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$grid-gutter-width: $spacer;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl,
+  xxl: $screen-xxl
+);

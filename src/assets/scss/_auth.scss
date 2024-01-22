@@ -1,0 +1,177 @@
+
+.co-main-landing {
+    min-height: 100vh;
+    padding: $spacer 4vh;
+    
+    @include screen-mobile {
+        padding-right: $spacer;
+        padding-left: $spacer;
+    }
+}
+
+.co-main-landing-brand {
+    width: 180px;
+}
+
+.co-main-landing-content {
+    padding-top: 40px;
+}
+
+.co-main-landing-photocol {
+    width: 50%;
+
+    @include screen-mobile {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.co-main-landing-slider {
+    height: 100%;
+    padding-bottom: 46px;
+    background-color: transparent;
+
+    &-photos {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &-img {            
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        
+        &-overlay {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 5;            
+            padding: 20px 30px 30px 20px;            
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(73%, rgba(9, 23, 50, 0)), to(#091731));
+            background-image: linear-gradient(180deg, rgba(9, 23, 50, 0) 73%, #091731);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: right;
+
+            &-name {
+                margin-top: 5px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    & .carousel-inner {
+        height: 100%;
+    }
+
+    & .carousel-indicators button{
+        border-radius: 100%;
+        background-color: rgba(34, 34, 34, 0.4);
+        width: 12px;
+        height: 12px;
+
+        &.active {
+            background-color: #222;
+        }
+    }
+
+    .carousel-inner {
+        border-radius: 15px;
+    }
+
+    @include screen-mobile {
+        height: auto;
+
+        &-photos {
+            padding-bottom: 60%;
+
+            &-overlay {
+                background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 23, 50, 0)), to(#091731));
+                background-image: linear-gradient(180deg, rgba(9, 23, 50, 0), #091731);
+                font-size: 18px;
+
+                &-name {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.co-log-h1 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    @include screen-tablet {
+        font-size: 26px;
+    }
+    @include screen-mobile {
+        font-size: 22px;
+    }
+}
+
+.co-main-landing-right {
+    position: relative;
+    width: 47%;
+    padding-right: 4vw;
+    padding-bottom: 30px;
+    padding-left: 4vw;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    @include screen-mobile {
+        width: 100%;
+        padding-right: 0vw;
+        padding-left: 0vw;
+        order: -1;
+    }
+}
+
+.co-log-formblock {
+    max-width: 500px;
+    @include screen-mobile {
+        max-width: 100%;
+    }
+}
+
+.co-log-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: $spacer;
+    grid-row-gap: $spacer;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.co-forgot-pass {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.co-log-bottom {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid $border-dark-color;
+    color: $text-desc-color;
+    font-size: 16px;
+}

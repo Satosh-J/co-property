@@ -1,0 +1,5 @@
+export default {
+  // SIGNUP
+  SIGNUP_STEP: 'SIGNUP_STEP',
+  MINI_SIDEBAR: 'MINI_SIDEBAR',
+}
