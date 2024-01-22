@@ -34,7 +34,7 @@ $today-highlight-bg: #FAFBFE;
 }
 
 .rbc-header {
-    background-color: $bg-main-color; 
+    background-color: $bg-main-color;
     //border-bottom: 0px;
     font-size: 14px;
     padding: 16px 8px;
@@ -88,7 +88,7 @@ $today-highlight-bg: #FAFBFE;
     }
 }
 
-.co-calendar-wrapper.week {    
+.co-calendar-wrapper.week {
     & .rbc-current-time-indicator::after {
         width: 700%;
     }
@@ -143,7 +143,7 @@ $today-highlight-bg: #FAFBFE;
             padding: 10px;
             background-color: $white-color;
             color: $text-title-color;
-            box-shadow: 0px 8px 36px rgba(15, 16, 19, 0.08);    
+            box-shadow: 0px 8px 36px rgba(15, 16, 19, 0.08);
         }
     }
 
@@ -153,7 +153,7 @@ $today-highlight-bg: #FAFBFE;
             background-color: $white-color;
             color: $text-title-color;
             backdrop-filter: blur(3px);
-            box-shadow: 0px 8px 36px rgba(15, 16, 19, 0.08);    
+            box-shadow: 0px 8px 36px rgba(15, 16, 19, 0.08);
         }
     }
 }
@@ -215,7 +215,7 @@ $today-highlight-bg: #FAFBFE;
     display: none;
 }
 
-.co-calendar-event-wrapper {    
+.co-calendar-event-wrapper {
     position: relative;
     font-size: 12px;
     line-height: 1.3;
@@ -224,7 +224,7 @@ $today-highlight-bg: #FAFBFE;
             padding: 2px 10px;
             color: $white-color;
             border-radius: 3px;
-                        
+
             font-weight: 600;
             font-size: 10px;
             line-height: 14px;
@@ -241,7 +241,7 @@ $today-highlight-bg: #FAFBFE;
             }
         }
     }
-    
+
     & .co-calendar-event-dot {
         width: 5px;
         height: 5px;
@@ -257,12 +257,12 @@ $today-highlight-bg: #FAFBFE;
             background-color: $success-color;
         }
     }
-    
+
     & .co-calendar-event-title {
         font-weight: 600;
         width: calc(100% - 24px);
         &:not(.expanded) {
-            text-overflow: ellipsis;        
+            text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
         }
@@ -276,18 +276,18 @@ $today-highlight-bg: #FAFBFE;
 
     & .co-calendar-event-desc {
         width: calc(100% - 24px);
-        color: $gray-color;     
+        color: $gray-color;
     }
 }
 .co-calendar-wrapper.month {
     & .co-calendar-event-title {
         width: calc(100% - 34px);
     }
-    
-    & .rbc-row-segment .rbc-event-content {
-        overflow: unset;
-        white-space: unset;
-    }
+
+    // & .rbc-row-segment .rbc-event-content {
+    //     overflow: unset;
+    //     white-space: unset;
+    // }
 }
 
 .rbc-date-cell {
@@ -310,7 +310,7 @@ $today-highlight-bg: #FAFBFE;
         &.rbc-selected {
             background-color: $bg-main-color;
         }
-    }  
+    }
     & .co-calendar-event-title {
         color: $text-title-color;
     }
